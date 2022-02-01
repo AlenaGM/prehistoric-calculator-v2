@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Week 14</title>
+</head>
+<body>
+    <div class="content" onclick="changeColor(this)">
+        <div class="greetings">
+            <h2 class="greetings__title">Привет!</h2>
+            <p class="greetings__remark">* Кликни на содержание и у него появится красивый голубой фон</p>
+            <p>А теперь - давай познакомимся!</p>
+            <p>Как тебя зовут?</p>
+            <input type="text" id="firstName">
+            <button onclick="clickMe()" class="button button_color-yellow">Жми сюда!</button>
+            <textarea id="miracle" class="greetings__nicetomeetyou" rows="5" cols="34"></textarea>
+        </div>
+
+        <div class="calculator">
+            <p>Ну, раз мы уже знакомы, давай поиграем в</p>
+            <h2>допотопный калькулятор</h2>
+            <div>
+                <label for="numberone">Введи первое значение</label>
+                <input type="number" name="numberone" id="firstNumber">
+            </div>
+            <div>
+                <label for="numbertwo">Введи второе значение</label>
+                <input type="number" name="numbertwo" id="secondNumber">
+            </div>
+            <div class="noZero" id="noZero">
+            </div>
+            <div class="calculator__buttons">
+                <p class=calculator__whattodo>Что делаем?</p>
+                <button onclick="addNumbers()" class="button button_color-pink">+</button>
+                <button onclick="subtractNumbers()" class="button button_color-pink">-</button>
+                <button onclick="multiplyNumbers()" class="button button_color-pink">*</button>
+                <button onclick="divideNumbers()" class="button button_color-pink">/</button>
+            </div>
+            <div>
+                <label for="numberequal">А вот и результат:</label>
+                <!--<button  class="button button_color-pink">=</button>-->
+                <input type="number" name="numberequal" id="resultNumber">
+            </div>
+            <div>
+                <button onclick="clearAllNumbers()" class="button button_color-pink">Стереть все!</button>
+            </div>
+
+        </div>
+
+        <div class="tv">
+            <h2 class="tv__title">Странный Телевизор</h2>
+            <div class="tv__screen">
+                <img id="animalImg" src="assets/img/prehist1.jpg" alt="prehistoric animal">
+                <div class="tv__buttons">
+                    <button onclick="getBack()" class="button button_color-mint"></button>
+                    <button onclick="getForward()" class="button button_color-mint"></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
