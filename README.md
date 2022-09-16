@@ -1,6 +1,6 @@
 # 🦖Prehistoric-calculator-V2🦖
 
-_Upgrade of 🦖[Prehistoric-calculator]🦖 from week 13_
+_Upgrade of 🦖[Prehistoric-calculator]🦖_
 <br><br>
 
 Week 19th upgrade tasks consisted of:
