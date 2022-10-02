@@ -1,4 +1,4 @@
-/*----------------Сетка-------------------------*/
+/*----------------Grid-------------------------*/
 body {
   display: grid;
   background: url("../img/jungle.jpg");
@@ -42,7 +42,7 @@ body {
   flex-direction: column;
 }
 
-/*----------------Кнопки------------------------*/
+/*----------------Buttons------------------------*/
 .button {
   border-radius: 15px;
   border: none;
@@ -93,7 +93,7 @@ body {
   width: 100%;
 }
 
-/*----------------Типографика-------------------*/
+/*----------------typography-------------------*/
 h2 {
   font-family: "Amatic SC", cursive;
   font-size: 54px;
@@ -151,7 +151,7 @@ input {
   font-weight: bold;
 }
 
-/*---------Оформление и все, что осталось-------*/
+/*---------Rest of decoration-------*/
 div.selected {
   background-color: rgb(4, 193, 250);
 }
@@ -201,6 +201,7 @@ label {
   border: 5px solid #80ffcc;
 }
 
+/*---------Media queries-------*/
 @media screen and (max-width: 960px) {
   body {
     display: grid;
