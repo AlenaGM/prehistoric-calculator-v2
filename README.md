@@ -3,8 +3,8 @@
 _Upgrade of 🦖[Prehistoric-calculator]🦖_
 <br><br>
 
-Week 19th upgrade tasks consisted of:
-- _inputs_ instead of _prompts_ to enter calculated numbers and show the result;
+The tasks were:
+- _inputs_ instead of _prompts_ to enter numbers to calculate and show result;
 - background change when click on it;
 - basic gallery with 2 images and "back" and "forward" buttons;
 - class _Calculator_ that has 4 static methods - _addNumbers, subtractNumbers, multiplyNumbers, divideNumbers_.
