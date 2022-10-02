@@ -49,7 +49,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 30px;
+  padding: 10px 25px;
   font-family: "Montserrat", sans-serif;
   font-size: 28px;
   line-height: 140%;
@@ -80,7 +80,7 @@ body {
 .button_color-pink:not(:last-of-type) {
   color: #ffffff;
   background: #ec008c;
-  margin-right: 25px;
+  margin-right: 15px;
 }
 
 .calculator__buttons {
@@ -172,6 +172,7 @@ label {
 .greetings__nicetomeetyou {
   background-color: transparent;
   border: none;
+  outline: none;
   padding: 15px 0px;
   margin: 30px 0px 0px 0px;
 }

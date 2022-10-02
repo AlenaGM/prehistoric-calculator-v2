@@ -1,7 +1,7 @@
 function clickMe() {
   let firstName = document.getElementById("firstName");
   let phrase = `Nice to meet you, ${firstName.value}! My name is Alёna.`;
-  document.getElementById("miracle").innerHTML = phrase;
+  document.getElementById("miracle").value = phrase;
 }
 
 function changeColor(sender) {
