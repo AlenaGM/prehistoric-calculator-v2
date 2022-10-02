@@ -1,203 +1,215 @@
 /*----------------Сетка-------------------------*/
 body {
-    display: grid;
-    background: url('../img/jungle.jpg');
-    grid-template: 1fr / minmax(24px, 1fr) minmax(auto, 1200px) minmax(24px, 1fr);
-    grid-template-areas:
-        ". content .";
+  display: grid;
+  background: url("../img/jungle.jpg");
+  grid-template: 1fr / minmax(24px, 1fr) minmax(auto, 1200px) minmax(24px, 1fr);
+  grid-template-areas: ". content .";
 }
 
 .content {
-    grid-area: content;
-    background: url('../img/tiger.png') 0 0 no-repeat, url('../img/dino.png') 100% 45%/auto 450px no-repeat;
-    min-height: 100vh;
-    margin: 50px 0px;
-    padding: 0px;
-    display: grid;
-    grid-template:
-        "greetings"
-        "calculator"
-        "tv";
+  grid-area: content;
+  background: url("../img/tiger.png") 15px 15px no-repeat,
+    url("../img/dino.png") 100% 45% / auto 450px no-repeat;
+  min-height: 100vh;
+  margin: 50px 0px;
+  padding: 0px;
+  display: grid;
+  grid-template:
+    "greetings"
+    "calculator"
+    "tv";
 }
 
 .greetings {
-    grid-area: greetings;
-    justify-self: end;
-    padding: 20px 20px 20px 350px;
+  grid-area: greetings;
+  justify-self: end;
+  padding: 20px 20px 20px 350px;
 }
 
 .calculator {
-    grid-area: calculator;
-    display: flex;
-    flex-direction: column;
-    justify-self: start;
-    align-self: end;
-    align-items: flex-end;
-    padding: 30px 250px 100px 20px;
+  grid-area: calculator;
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  align-self: end;
+  align-items: flex-end;
+  padding: 30px 250px 100px 20px;
 }
 
 .tv {
-    grid-area: tv;
-    display: flex;
-    flex-direction: column;
+  grid-area: tv;
+  display: flex;
+  flex-direction: column;
 }
 
 /*----------------Кнопки------------------------*/
 .button {
-    border-radius: 15px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
-    line-height: 140%;
-    letter-spacing: 0em;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    box-shadow: 0px 5px 5px rgba(17, 8, 8, 0.25);
-    margin: 30px 0px 0px 0px;
+  border-radius: 15px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  line-height: 140%;
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(17, 8, 8, 0.25);
+  margin: 30px 0px 0px 0px;
 }
 
 .button_color-yellow {
-    color: #FFFFFF;
-    background: #f9bc07;
+  color: #ffffff;
+  background: #f9bc07;
 }
 
 .button_color-pink {
-    color: #FFFFFF;
-    background: #ec008c;
+  color: #ffffff;
+  background: #ec008c;
 }
 
 .button_color-mint {
-    background: #80ffcc;
-    padding: 10px;
-    border-radius: 50%;
+  background: #80ffcc;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .button_color-pink:not(:last-of-type) {
-    color: #FFFFFF;
-    background: #ec008c;
-    margin-right: 25px;
+  color: #ffffff;
+  background: #ec008c;
+  margin-right: 25px;
 }
 
 .calculator__buttons {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .tv__buttons {
-    display:inline-flex;
-    justify-content: space-around;
-    width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
 }
-
-
 
 /*----------------Типографика-------------------*/
 h2 {
-    font-family:  'Amatic SC', cursive;
-    font-size: 54px;
-    font-weight: 600;
-    color: #ec008c;
-    text-transform: uppercase;
-    cursor: pointer;
-    align-self: center;
+  font-family: "Amatic SC", cursive;
+  font-size: 54px;
+  font-weight: 600;
+  color: #ec008c;
+  text-transform: uppercase;
+  cursor: pointer;
+  align-self: center;
 }
 
 .greetings__title {
-    color: #f9bc07;
+  color: #f9bc07;
 }
 
-.tv__title{
-    color:  #80ffcc;
-    margin-top: 100px;
+.tv__title {
+  color: #80ffcc;
+  margin-top: 100px;
 }
 
-p, label {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    color: #FFFFFF;
+p,
+label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
 }
 
 .greetings__remark {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: rgb(4, 193, 250);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: rgb(4, 193, 250);
 }
 
 input {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
-    line-height: 140%;
-    letter-spacing: 0em;
-    text-align: left;
-    text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  line-height: 140%;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
 }
 
 .greetings__nicetomeetyou {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: white;
 }
 
-.noZero, .greetings__nicetomeetyou {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-    color: rgb(206, 50, 50);
-    padding-top: 30px;
-    font-weight:bold;
+.noZero,
+.greetings__nicetomeetyou {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: rgb(206, 50, 50);
+  padding-top: 30px;
+  font-weight: bold;
 }
 
 /*---------Оформление и все, что осталось-------*/
 div.selected {
-    background-color: rgb(4, 193, 250)
+  background-color: rgb(4, 193, 250);
 }
 
 input {
-    padding: 15px 30px;
-    border-radius: 15px;
-    border: none;
-    box-shadow: 0px 5px 5px rgba(17, 8, 8, 0.25);
-    margin: 30px 0px 0px 0px;
-    max-width: 158.5px;
+  padding: 15px 30px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 5px 5px rgba(17, 8, 8, 0.25);
+  margin: 30px 0px 0px 0px;
+  max-width: 158.5px;
 }
 
 label {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .greetings__nicetomeetyou {
-    background-color: transparent;
-    border: none;
-    padding: 15px 0px;
-    margin: 30px 0px 0px 0px;
+  background-color: transparent;
+  border: none;
+  padding: 15px 0px;
+  margin: 30px 0px 0px 0px;
 }
 
 .calculator__whattodo {
-    padding-top: 25px;
-    margin-right: 15px;
+  padding-top: 25px;
+  margin-right: 15px;
 }
 
 .tv__screen {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    max-width: 400px;
-    outline: 5px solid #80ffcc;
-    outline-offset: 70px;
-    margin: 80px auto 150px auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 400px;
+  outline: 5px solid #80ffcc;
+  outline-offset: 70px;
+  margin: 80px auto 150px auto;
 }
 
 .tv__screen img {
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    border-radius: 30px;
-    border: 5px solid #80ffcc;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  border: 5px solid #80ffcc;
 }
 
+@media screen and (max-width: 960px) {
+  body {
+    display: grid;
+    background: url("../img/jungle.jpg");
+    grid-template: 1fr / 1fr;
+    grid-template-areas: "content";
+  }
+
+  .content {
+    margin: 0;
+  }
+}
