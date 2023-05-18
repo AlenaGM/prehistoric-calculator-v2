@@ -4,10 +4,10 @@ _Upgrade of 🦖[Prehistoric-calculator]🦖_
 <br><br>
 
 The tasks were:
-- _inputs_ instead of _prompts_ to enter numbers to calculate and show result;
+- _inputs_ instead of _prompts_ to enter numbers and show result;
 - background change when click on it;
 - basic gallery with 2 images and "back" and "forward" buttons;
-- class _Calculator_ that has 4 static methods - _addNumbers, subtractNumbers, multiplyNumbers, divideNumbers_.
+- class _Calculator_ with 4 static methods - _addNumbers, subtractNumbers, multiplyNumbers, divideNumbers_.
 
 ## Demo
 [Prehistoric-calculator-V2]
