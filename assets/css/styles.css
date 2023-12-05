@@ -94,6 +94,7 @@ body {
 }
 
 /*----------------typography-------------------*/
+h1,
 h2 {
   font-family: "Amatic SC", cursive;
   font-size: 54px;
